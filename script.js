@@ -95,8 +95,9 @@ const formatMovementDates = function (date) {
   // const day = `${date.getDate()}`.padStart(2, 0);
   // const month = `${date.getMonth() + 1}`.padStart(2, 0);
   // const year = date.getFullYear();
-  //
+  // above code can be replaced with lower code
   return new Intl.DateTimeFormat(locale).format(date);
+  
 };
 
 // Functions
@@ -131,7 +132,7 @@ const displayMovements = function (acc, sort = false) {
     //   currency: acc.currency,
     // }).format(mov);
 
-    console.log(displayDate);
+    // console.log(displayDate);
     const html = `
       <div class="movements__row">
         <div class="movements__type movements__type--${type}">${
